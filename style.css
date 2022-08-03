@@ -8,45 +8,16 @@
 .carousel-item{
     padding: 20px 40px;
 }
-.price{
-    color: #FF136F;
-}
-.buy-now-button{
-    background-image: linear-gradient(to bottom, #FF589B 0%, #FF136F 100%);
+
+.smbutton{
+    background-image: linear-gradient(to bottom, #d4b70e 0%, #050404f1 100%);
     color: #fff;
     border: none;
     border-radius: 8px;
     padding: 9px 25px;
     cursor: pointer;
 }
-.cat1, .cat2, .cat3{
-    padding: 10px 30px;
-    border-radius: 10px;
-}
-.cat1{
-    background-color: orange;
-}
-.cat2{
-    background-color: orchid;
-}
-.cat3{
-    background-color: blue;
-}
-.categories h1{
-    color: white;
-}
-.categories img{
-    width: 100px;
-}
-.card{
-    border: none;
-    border-radius: 10px;
-    box-shadow: 5px 5px 10px lightgray;
-}
-.card-footer{
-    background-color: white;
-    border-top: none;
-}
+
 #subscribe{
     height: 300px;
 }
@@ -73,7 +44,7 @@ footer{
 }
 .wldr{
     color: rgb(239, 202, 56);
-    font-family: 'Lobster', cursive;
+    
 }
 .bighd{
     font-size: 60px;
@@ -86,11 +57,30 @@ footer{
 }
 body{
     background-image: url("https://img.freepik.com/premium-photo/3d-rendered-black-product-stand-with-yellow-neon-lights_167650-2520.jpg");
+    font-family: 'Lobster', cursive;
 }
 .fbg{
     background-color: #c7ad1a;
 }
-.h{
+
+
+.lcf{
+    color: #fff;
+}
+.h1{
     text-align: center;
     color: #fff;
+    font-size: 50px;
+    
+}
+.h2{
+    
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Lobster', cursive;
+
+    font-family: 'Poiret One', cursive;
+    
+    
 }

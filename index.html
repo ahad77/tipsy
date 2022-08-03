@@ -9,6 +9,10 @@
     <link rel="stylesheet" href="style.css">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Lobster&family=Poiret+One&display=swap" rel="stylesheet">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
 
@@ -29,13 +33,13 @@
               <a class="nav-link" href="index.html">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="menu.html">Menu</a>
+              <a class="nav-link" href="h1">About Us</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="#livecustomerforecast">LiveCustomerForecast</a> 
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="form.html">Reservation</a>
+              <a class="nav-link" href="#re">Reservations</a>
             </li>
           </ul>
         </div>
@@ -70,7 +74,7 @@
                     
                   </div>
                   <div class="col-md-5">
-                    <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
+                    <img src="images/stkbf.png" class="d-block w-100" alt="...">
                   </div>
               </div>
           </div>
@@ -107,7 +111,7 @@
     <div class="bgm1">
       <div class="container d-flex align-items-center justify-content-center orange-bg " id="subscribe">
         <div>
-          <h5 class="re"><b>Reservations</b></h5>
+          <h5 class="re" id="re"><b>Reservations</b></h5>
           <h2 class="re"><b>BOOK A TABLE</b></h2>
           
           <form action="https://formsubmit.co/bd55c40c49e43e1bb450a181419f38e5" method="POST">
@@ -126,22 +130,29 @@
               <h6>Please Select The Numbers of Guest</h6>
               <label for="person">Persons</label>
               <input type="number"  name="numbers" placeholder="numbers"><br>
-              <button class="buy-now-button">SUBMIT</button>
+              <button class="smbutton">SUBMIT</button>
           </form>
         </div>
       </div>
       <div>
-
       </div>
     </div>
-
     <div>
-      <p><b><h5 class="h">About Us</h5></b></p>
+      
+      <p><b><h1 class="h1" id="h1">About Us</h1></b></p>
+      <br>
+      <div class="h2" >
+        <p>
+          Tipsy Cafe is a dream come true for a bunch of friends sharing their sheer love for food and experimentation. One of it's kind in the port city of Chattogram, we opened our doors to you on the 16th of December, 2019. Our location inspires us to celebrate the amazing seafood that this city has to offer. We are constantly experimenting with both local and international flavors and constantly pushing boundaries whilst also maintaining quality and hygiene to the highest standards. We are grateful for all the love you have given us so far. We hope to continue serving you with amazing, mouthwatering dishes for you, your friends and your family.
+        </p>
+        <p><img src="images/Tipsy.png" alt=""></p>
+      </div>
     </div>
+    <br>
 
     <div class="bgm3">
       <div class="livecustomerforecast" id="livecustomerforecast">
-        <h2 class="text-center text-capitalize copyright"><b>Live Customer Forecast </b></h2>
+        <h2 class="text-center text-capitalize copyright lcf"><b>Live Customer Forecast </b></h2>
       
   
       <div id="txt"></div>
@@ -156,6 +167,7 @@
         s = checkTime(s);
         document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
         setTimeout(startTime, 1000);
+        alim
       }
       
       function checkTime(i) {
