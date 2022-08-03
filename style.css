@@ -2,7 +2,7 @@
     margin-bottom: 100px;
 }
 .orange-bg{
-    background-color: #fceae82e;
+    background-color: #fceae800;
     border-radius: 10px;
 }
 .carousel-item{
@@ -70,4 +70,11 @@ footer{
 }
 .hdbn1{
     text-align: center;
+}
+.wldr{
+    color: rgb(239, 202, 56);
+    font-family: 'Lobster', cursive;
+}
+.bighd{
+    font-size: 60px;
 }
