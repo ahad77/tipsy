@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
+<body onload="startTime()">
 <div class="bgm2">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -27,7 +27,7 @@
               <a class="nav-link" href="menu.html">Menu</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#Live Forecast">Live Forecast</a>
+              <a class="nav-link" href="#livecustomerforecast">LiveCustomerForecast</a> 
             </li>
             <li class="nav-item">
               <a class="nav-link" href="form.html">Reservation</a>
@@ -45,10 +45,10 @@
                     <h1>Mega LCD TV For Sports</h1>
                     <p>This is the best tv in the world for people who just want to waste time in front of tv.</p>
                     <h1 class="price">$1200</h1>
-                    <button class="buy-now-button">Buy Now</button>
+                    
                 </div>
-                <div class="col-md-5">
-                    <img src="images/banner-images/tv.png" class="d-block w-100" alt="...">
+                <div class="col-md-4">
+                    <img src="https://www.pngplay.com/wp-content/uploads/6/Cocktail-Drink-PNG-HD-Quality-1.png" class="d-block w-100" alt="...">
                 </div>
             </div>
           </div>
@@ -58,7 +58,7 @@
                     <h1>Cool Dude Headphone</h1>
                     <p>This is the best headphone in the world for people who just want to waste time in front of funky world.</p>
                     <h1 class="price">$420</h1>
-                    <button class="buy-now-button">Buy Now</button>
+                    
                   </div>
                   <div class="col-md-5">
                     <img src="images/banner-images/headphone.png" class="d-block w-100" alt="...">
@@ -67,14 +67,14 @@
           </div>
           <div class="carousel-item">
               <div class="row align-items-center">
-                  <div class="col-md-7">
+                  <div class="col-md-5">
                     <h1>X-Box for your living room</h1>
                     <p>This is the best x-box in the world for people who just want to waste time in front of fake sports.</p>
                     <h1 class="price">$600</h1>
-                    <button class="buy-now-button">Buy Now</button>
+                    
                   </div>
-                  <div class="col-md-5">
-                    <img src="images/banner-images/xbox.png" class="d-block w-100" alt="...">
+                  <div class="col-md-7">
+                    <img src="images/sea123.png" class="d-block w-100" alt="...">
                   </div>
               </div>
           </div>
@@ -92,31 +92,10 @@
 
 </div>
     
-    <div class="container categories">
-      <div class="row">
-        <div class="col-md-4">
-          <div class="d-flex justify-content-between align-items-center cat1">
-            <h1>Watch</h1>
-            <img src="images/categories/watch.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="d-flex justify-content-between align-items-center cat2">
-            <h1>Bag</h1>
-            <img src="images/categories/bag.png" alt="">
-          </div>
-        </div>
-        <div class="col-md-4">
-          <div class="d-flex justify-content-between align-items-center cat3">
-            <h1>Shoes</h1>
-            <img src="images/categories/shoes.png" alt="">
-          </div>
-        </div>
-      </div>
-    </div>
+    
 
     <div class="container shoes" id="shoes">
-      <h3>Shoes</h3>
+      <h3 class="hdbn1"><b>Shoes</b></h3>
       <div class="card-deck">
         <div class="card">
           <img src="images/shoes/shoe-1.png" class="card-img-top" alt="...">
@@ -192,15 +171,66 @@
         <h3>LET'S STAY IN TOUCH</h3>
         <h6>Get updates on sales, specials and more</h6>
         <form action="https://formsubmit.co/bd55c40c49e43e1bb450a181419f38e5" method="POST">
-          <input type="hidden" name="_captcha" value="false">
+          <input type="hidden" name="_captcha" value="false"> 
           <input class="form-control" type="text">
          <button class="buy-now-button">SUBMIT</button>
         </form>
       </div>
     </div>
+    <div class="livecustomerforecast" id="livecustomerforecast">
+      <h2 class="text-center text-capitalize copyright"><b>Live Customer Forecast </b></h2>
+    
+
+    <div id="txt"></div>
+
+    <script>
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+    <br>
+    </div>
+
+
+
+    <div class="spinner-border text-success" role="status">
+      <span class="visually-hidden">......</span>
+    </div>
+        <div class="progress">
+          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><b>Hall</b></div>
+        </div>
+    
+    <br>
+    <div class="spinner-border text-danger" role="status">
+      <span class="visually-hidden">......</span>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><b>Kids Zone</b></div>
+    </div>
+    <br>
+    <div class="spinner-border text-warning" role="status">
+      <span class="visually-hidden">......</span>
+    </div>
+    <div class="progress">
+      <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><b>Roof Top</b></div>
+    </div>
+    <br>
 
     <footer>
       <h5 class="icon">Hotline: +31005681 | info@tipsycafe.com.bd</h5>
+      <br>
       <div class="fcp">  
       <small ><b>©2022 | <img src="images/Tipsy(1).png" height="20px" width="20px"> <span class="Tipsy">Tipsy Cafe.</span> All rights reserved. Developed By <span class="icon">Grow More Web tech Ltd.</span> Chattogram, Bangladesh. <b></small>
 </div>
@@ -211,3 +241,6 @@
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
 </body>
 </html>
+<br>
+<br>
+<br>

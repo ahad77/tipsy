@@ -2,7 +2,7 @@
     margin-bottom: 100px;
 }
 .orange-bg{
-    background-color: #fceae8;
+    background-color: #fceae82e;
     border-radius: 10px;
 }
 .carousel-item{
@@ -63,8 +63,11 @@ footer{
     color: #626262;
 }
 .bgm2{
-    background-image: url("images/value-steak-platter.jpg");
+    background-image: url("images/intr1.jpg");
 }
-.bgm{
-    background-image: url("images/square-Chimichurri-steak-platter-10.jpg");
+.bgm1{
+    background-image: url("images/intr3.jpg");
+}
+.hdbn1{
+    text-align: center;
 }
