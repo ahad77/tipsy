@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet"> 
 
 </head>
-<body onload="startTime()">
+<body class="bgm0" onload="startTime()">
 <div class="bgm2">
   <div class="container">
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -51,14 +51,7 @@
                     <img src="https://www.pngplay.com/wp-content/uploads/6/Cocktail-Drink-PNG-HD-Quality-1.png" class="d-block w-100" alt="...">
                 </div>
                 <div class="col-md-7 wldr">
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
-                  <br>
+                  
                     <h1>Take a sip of our innovative welcome drink</h1>
                     <h1 class="bighd">The Finest Drinks</h1>
                     <p>From the delicious food to wonderful cocktails, Laurent’s offer is guaranteed to satisfy all of your taste buds.</p>
@@ -209,67 +202,70 @@
         </div>
       </div>
       <div>
-        
+
       </div>
     </div>
 
-    <div class="livecustomerforecast" id="livecustomerforecast">
-      <h2 class="text-center text-capitalize copyright"><b>Live Customer Forecast </b></h2>
-    
-
-    <div id="txt"></div>
-
-    <script>
-    function startTime() {
-      const today = new Date();
-      let h = today.getHours();
-      let m = today.getMinutes();
-      let s = today.getSeconds();
-      m = checkTime(m);
-      s = checkTime(s);
-      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
-      setTimeout(startTime, 1000);
-    }
-    
-    function checkTime(i) {
-      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
-      return i;
-    }
-    </script>
-    <br>
+    <div class="bgm3">
+      <div class="livecustomerforecast" id="livecustomerforecast">
+        <h2 class="text-center text-capitalize copyright"><b>Live Customer Forecast </b></h2>
+      
+  
+      <div id="txt"></div>
+  
+      <script>
+      function startTime() {
+        const today = new Date();
+        let h = today.getHours();
+        let m = today.getMinutes();
+        let s = today.getSeconds();
+        m = checkTime(m);
+        s = checkTime(s);
+        document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+        setTimeout(startTime, 1000);
+      }
+      
+      function checkTime(i) {
+        if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+        return i;
+      }
+      </script>
+      <br>
+      </div>
+  
+  
+  
+      <div class="spinner-border text-success" role="status">
+        <span class="visually-hidden">......</span>
+      </div>
+          <div class="progress">
+            <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><b>Hall</b></div>
+          </div>
+      
+      <br>
+      <div class="spinner-border text-danger" role="status">
+        <span class="visually-hidden">......</span>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><b>Kids Zone</b></div>
+      </div>
+      <br>
+      <div class="spinner-border text-warning" role="status">
+        <span class="visually-hidden">......</span>
+      </div>
+      <div class="progress">
+        <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><b>Roof Top</b></div>
+      </div>
+      <br>
     </div>
-
-
-
-    <div class="spinner-border text-success" role="status">
-      <span class="visually-hidden">......</span>
     </div>
-        <div class="progress">
-          <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 25%" aria-valuenow="25" aria-valuemin="0" aria-valuemax="100"><b>Hall</b></div>
-        </div>
-    
-    <br>
-    <div class="spinner-border text-danger" role="status">
-      <span class="visually-hidden">......</span>
-    </div>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated bg-danger" role="progressbar" style="width: 75%" aria-valuenow="100" aria-valuemin="0" aria-valuemax="100"><b>Kids Zone</b></div>
-    </div>
-    <br>
-    <div class="spinner-border text-warning" role="status">
-      <span class="visually-hidden">......</span>
-    </div>
-    <div class="progress">
-      <div class="progress-bar progress-bar-striped progress-bar-animated bg-warning" role="progressbar" style="width: 50%" aria-valuenow="75" aria-valuemin="0" aria-valuemax="100"><b>Roof Top</b></div>
-    </div>
-    <br>
 
     <footer>
       <h5 class="icon">Hotline: +31005681 | info@tipsycafe.com.bd</h5>
       <br>
       <div class="fcp">  
       <small ><b>©2022 | <img src="images/Tipsy(1).png" height="20px" width="20px"> <span class="Tipsy">Tipsy Cafe.</span> All rights reserved. Developed By <span class="icon">Grow More Web tech Ltd.</span> Chattogram, Bangladesh. <b></small>
-</div>
+
     </footer>
 
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>

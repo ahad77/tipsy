@@ -81,3 +81,10 @@ footer{
 .re{
     text-align: center;
 }
+.bgm3{
+    background-image: url("images/intr4.jpg");
+}
+body{
+    background-color: #c7ad1a;
+    background-image: url("https://img.freepik.com/premium-photo/3d-rendered-black-product-stand-with-yellow-neon-lights_167650-2520.jpg");
+}
